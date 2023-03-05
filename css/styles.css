@@ -20,6 +20,11 @@
   --btn-text-color: #4d5ae5;
   --filters-btn-text-hover-color: #ffffff;
   --filter-btn-background-hover-color: #404bbf;
+  --background-color-feature-section: #F4F4FD;
+  --text-social-link: #F4F4FD;
+  --background-social-link: #4D5AE5;
+  --background-social-link-hover: #404BBF;
+
 }
 
 
@@ -249,6 +254,13 @@ img {
   cursor: pointer;
 }
 
+.hero-btn:hover,
+.hero-btn:focus {
+ border-color: var(--filter-btn-background-hover-color);
+  color: var(--btn-light-color);
+  background: var(--filter-btn-background-hover-color);
+}
+
 /* ----------feature--------- */
 .feature {
   padding: 120px 0;    
@@ -273,10 +285,37 @@ img {
 
 .feature-item {
   width:calc((100% - 72) / 4);
-  max-width: 264px; 
-  
+  max-width: 264px;   
 }
 
+.feature-item::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+  content: " ";
+  height: 112px;
+  background-size: 64px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--background-color-feature-section);
+  border-radius: 4px;
+}
+.feature-item:nth-child(1)::before {
+  background-image: url(../images/antenna\ 1-min.svg);
+}
+
+.feature-item:nth-child(2)::before {
+  background-image: url(../images/clock\ 1-min.svg);
+}
+
+.feature-item:nth-child(3)::before {
+  background-image: url(../images/diagram\ 1-min.svg);
+}
+
+.feature-item:nth-child(4)::before {
+  background-image: url(../images/astronaut\ 1-min.svg);
+}
 
 .feature-subtitle {
   margin-bottom: 8px;
@@ -409,6 +448,30 @@ img {
   
 }
 
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.social-link {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+  width: 40px;
+  height: 40px;
+  color: var(--text-social-link);
+  background-color: var(--background-social-link);
+  border-radius: 50%;
+
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--background-social-link-hover);
+}
+
+
 /* ----------footer--------- */
 .page-footer {        
   padding: 100px 0;
@@ -449,6 +512,24 @@ img {
   letter-spacing: 0.02em;
   
 }
+
+.footer-social-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+.footer-subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--footer-text-color);
+}
+
 /* Page Portfolio */
 /* ----------Our works----------- */
 .works {   

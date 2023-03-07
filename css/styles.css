@@ -122,8 +122,7 @@ img {
   
 }
 
-.logo {
-  /* margin-right: 76px; */
+.logo {  
   padding: 24px 0;
 }
 
@@ -169,7 +168,7 @@ img {
 .header-contacts { 
   display: flex;
   margin-left: auto;
- /* justify-content: flex-end;   */
+ 
 }
 
 
@@ -248,7 +247,7 @@ img {
   padding: 16px 32px;
   min-width: 169px;
   
-  border-color: var(--btn-mavy-color);
+  border: 1px solid var(--btn-mavy-color);
   color: var(--btn-light-color);
   background: var(--btn-mavy-color);
 
@@ -263,7 +262,7 @@ img {
 
 .hero-btn:hover,
 .hero-btn:focus {
- border-color: var(--filter-btn-background-hover-color);
+ border: 1px solid var(--filter-btn-background-hover-color);
   color: var(--btn-light-color);
   background: var(--filter-btn-background-hover-color);
 }
@@ -494,7 +493,7 @@ img {
   width: 168px;
   height: 88px;
   fill: var(--helper-text-customers-btn);
-  border-color: var(--helper-text-customers-btn);
+  border: 1px solid var(--helper-text-customers-btn);
   border-radius: 4px;
   background-color: var(--background-customers-btn);
   cursor: pointer;
@@ -504,7 +503,7 @@ img {
 .customers-btn:hover,
 .customers-btn:focus {
   fill: var(--filter-btn-background-hover-color);
-  border-color: var(--filter-btn-background-hover-color)
+  border: 1px solid var(--filter-btn-background-hover-color)
   
 }
 
@@ -618,7 +617,7 @@ img {
 
 .filters-btn {
   padding: 12px 24px;
-  border: 1px solid  var(--filters-button-background);
+  border: 1px solid var(--filters-button-background);
   border-radius: 4px;
 
   color: var(--btn-text-color);
